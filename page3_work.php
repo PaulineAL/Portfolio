@@ -57,7 +57,7 @@ $data7 = $statement->fetch(PDO::FETCH_ASSOC);
       <!-- L'onglet au dessus-->
       <div class="onglet">
         <p><?php echo $data2["title_3"]?></p>
-        <a class="X" href="index.html"> X </a>
+        <a class="X" href="index.php"> X </a>
       </div>
 
       <div class="bg work">
