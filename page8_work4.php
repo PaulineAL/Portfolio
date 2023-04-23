@@ -43,8 +43,8 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
 
     <div class="centre">
       <!-- L'onglet au dessus-->
-      <div class="onglet w long">
-        <p><?php echo $data1["title_projet"]?></p>
+      <div class="onglet w">
+        <p><?php echo $data1["titre_projet"]?></p>
         <a class="X" href="page3_work.php"> X </a>
       </div>
 
