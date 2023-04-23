@@ -261,8 +261,8 @@ echo "<script>window.location.href='login.php';</script>";
 <hr>
 
 <h2> ARTICLES </h2>
-	<a href="visu_articles.php">Visualiser tous les articles</a><br/>
-	<a href="ajout_article.php">Ajouter un article</a> <br/>
+	<a href="visu_articles.php">Visualiser tous les articles</a><br/> <br/>
+	<a href="ajout_article.php">Ajouter un article</a> <br/> <br/>
 	<form method="POST" action="modifier_article.php">
 		Visualiser/Modifier l article n°
 		<input type="text" name="code_article" size="5" value="1" maxlength="10" >
