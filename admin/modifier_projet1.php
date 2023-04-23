@@ -177,7 +177,21 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <h2>Visualier/ Modifier projets</h2>
 </div>
 <div class="card-body">
-<?php echo $data1?>
+<?php 
+foreach ($data1) {
+			
+			echo '<form method="POST" action="valider_modification_projet_1.php">';
+			echo 'Titre Projet : <input type=text" name="titre_projet" size="45" value="'.$data1['titre_projet'].'"maxlength="45" readonly><br/><br/>';
+			echo 'Description:<input type="text" name="description" size="100" autofocus="true" value="'.$data1['description'].'"maxlength="1000"><br/><br/>';
+			echo 'Explication:<input type="text" name="explication" size="100" autofocus="true" value="'.$data1['explication'].'"maxlength="1000"><br/><br/>';
+			echo 'Premiere image:<input type="text" name="Img_projet_1" size="50" autofocus="true" value="'.$data1['Img_projet_1'].'"maxlength="255"><br/><br/>';
+            echo 'Deuxieme image:<input type="text" name="Img_projet_2" size="50" autofocus="true" value="'.$data1['Img_projet_2'].'"maxlength="255"><br/><br/>';
+            echo 'Troisieme image:<input type="text" name="Img_projet_3" size="50" autofocus="true" value="'.$data1['Img_projet_3'].'"maxlength="255"><br/><br/>';
+            echo 'Quatrieme image:<input type="text" name="Img_projet_4" size="50" autofocus="true" value="'.$data1['Img_projet_4'].'"maxlength="255"><br/><br/>';
+			echo '<input type="submit" value="Modifier" name="modifier">';
+			echo '</form>';
+		}
+?>
 </div>
 </div>
 </div><!-- /.container-fluid -->
