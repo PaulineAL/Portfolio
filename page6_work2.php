@@ -48,10 +48,9 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       </div>
 
       <div class="bg1">
-        <div class="explication top">
         <h1><?php echo $data1["titre_projet"]?></h1>
         <h2><?php echo $data1["description"]?></h2>
-        <p><?php echo $data1["explication"]?></p></div>
+        <p><?php echo $data1["explication"]?></p>
       <div class="bg work">
          <div class="Me">
                     <h2><?php echo $data1["titre_site_1"]?></h2>
