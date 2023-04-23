@@ -72,6 +72,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
                    <a href=<?php echo $data1["lien_site_2"]?>> Coming soon!</a>
 </div>
 </div>   
+</div>
 </div>    
   
     <!-- Le super footer-->
