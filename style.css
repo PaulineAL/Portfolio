@@ -752,6 +752,10 @@ legend {
     width: 227px;
     height: 128px;
   }
+
+  .onglet p {
+  font-size: 2em;
+  }
 }
 @media (max-width: 800px) {
   nav {

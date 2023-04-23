@@ -70,7 +70,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
                     <p>
                     <?php echo $data1["explication_site_2"]?>
 </p>
-                   <a class="button" href=<?php echo $data1["lien_site_2"]?>> Coming soon!</a>
+                   <a class="button" href=""> Coming soon!</a>
 </div>   
 </div> 
 </div>
