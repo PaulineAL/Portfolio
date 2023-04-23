@@ -171,7 +171,7 @@ echo "<script>window.location.href='login.php';</script>";
 </div>
 <div class="card-body">
 	<li>
-    <ul> <a href="modifier_projet_1.php"> Projet 1 </a> </ul>
+    <ul> <a href="modifier_projet1.php"> Projet 1 </a> </ul>
     <ul> <a href="modifier_projet_2.php"> Projet 2 </a> </ul>
     <ul> <a href="modifier_projet_3.php"> Projet 3 </a> </ul>
     <ul> <a href="modifier_projet_4.php"> Projet 4 </a> </ul>

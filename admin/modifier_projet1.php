@@ -1,9 +1,15 @@
+<?php
+require('../model/connect.php');
+if (!isset($_SESSION['isUserLoggedIn'])){
+echo "<script>window.location.href='login.php';</script>";
+}
+?>
 
 <?php
 $pdo = require '../model/connect.php';
-$sql1 = 'SELECT * FROM projet_1';
-// fetch the data
-$data = $statement->fetch(PDO::FETCH_ASSOC);
+$sqlQuery = 'SELECT * FROM projet_1';
+		$projet = $mysqlClient->prepare($sqlQuery);
+		$liste = $projet->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -172,7 +178,7 @@ $data = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="card-body">
 <?php 
-foreach ($data) {
+foreach ($liste as $data) {
 			
 			echo '<form method="POST" action="valider_modification_projet_1.php">';
 			echo 'Titre Projet : <input type=text" name="titre_projet" size="45" value="'.$data['titre_projet'].'"maxlength="45" readonly><br/><br/>';
