@@ -53,7 +53,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
           <ol class="carousel__viewport">
             <li id="carousel__slide1" tabindex="0" class="carousel__slide">
               <div class="carousel__snapper">
-                <img class="perso" src="Perso2.png" alt="Drawing of two original characters, Tee and Void"/>
+                <img class="perso" src=<?php echo $data1["img_projet_1"]?> alt="..."/>
                 <a href="#carousel__slide4" class="carousel__prev"
                   >Go to last slide</a
                 >
@@ -63,7 +63,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
               </div>
             </li>
             <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"> <img class="perso" src="Perso3.PNG" alt="Multiple sketches of characters"/> </div>
+              <div class="carousel__snapper"> <img class="perso" src="<?php echo $data1["img_projet_2"]?>" alt="Study of human anatomy by drawing Griffith of Berserk"/> </div>
               <a href="#carousel__slide1" class="carousel__prev"
                 >Go to previous slide</a
               >
@@ -72,7 +72,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
               >
             </li>
             <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"><img class="perso" src="Perso4.png" alt="A reference sheet of an original character, Ronnie"></div>
+              <div class="carousel__snapper"><img class="perso" src=<?php echo $data1["img_projet_3"]?> alt="Study of human anatomy by drawing Guts from Berserk, still a work in progress"></div>
               <a href="#carousel__slide2" class="carousel__prev"
                 >Go to previous slide</a
               >
@@ -81,7 +81,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
               >
             </li>
             <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"> <img class="perso" src="Perso5.png" alt="Sketch of another original character, Aethalia"/></div>
+              <div class="carousel__snapper"> <img class="perso" src=<?php echo $data1["img_projet_4"]?> alt="Study of perspective through creating a bedroom, still a work in progress"/></div>
               <a href="#carousel__slide3" class="carousel__prev"
                 >Go to previous slide</a
               >
