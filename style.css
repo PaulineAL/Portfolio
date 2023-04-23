@@ -242,7 +242,7 @@ hr {
   margin-bottom: 20px;
 }
 
-.mep > p {
+.mep,.colorfond > p {
   font-family: "Oxanium";
   font-weight: medium;
 
@@ -250,6 +250,12 @@ hr {
   margin: 10px;
 
   text-align: center;
+}
+
+.colorfond > h1 {
+  font-family: "BN Elements";
+  text-decoration: underline;
+  font-weight:normal;
 }
 
 /* CV */
@@ -271,7 +277,7 @@ hr {
 
 .flower,
 .bac,
-.mmi > h2 {
+.mmi,.colorfond > h2 {
   font-family: "Oxanium";
   font-weight: semibold;
 }
