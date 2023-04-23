@@ -181,7 +181,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 echo '<form method="POST" action="valider_modification_projet1.php">';
 			echo 'Titre Projet : <input type=text" name="titre_projet" size="45" value="'.$data1['titre_projet'].'"maxlength="45" readonly><br/><br/>';
 			echo 'Description:<input type="text" name="description" size="100" autofocus="true" value="'.$data1['description'].'"maxlength="1000"><br/><br/>';
-			echo 'Explication:<input type="textarea" name="explication" cols="100" rows="100" autofocus="true" value="'.$data1['explication'].'"maxlength="1000"><br/><br/>';
+			echo 'Explication:<input type="text" name="explication" style="height:100px; width:100px;" autofocus="true" value="'.$data1['explication'].'"maxlength="1000"><br/><br/>';
 			echo 'Premiere image:<input type="text" name="Img_projet_1" size="50" autofocus="true" value="'.$data1['Img_projet_1'].'"maxlength="255"><br/><br/>';
             echo 'Deuxieme image:<input type="text" name="Img_projet_2" size="50" autofocus="true" value="'.$data1['Img_projet_2'].'"maxlength="255"><br/><br/>';
             echo 'Troisieme image:<input type="text" name="Img_projet_3" size="50" autofocus="true" value="'.$data1['Img_projet_3'].'"maxlength="255"><br/><br/>';
