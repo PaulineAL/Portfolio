@@ -54,26 +54,22 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       <div class="bg work">
          <div class="Me">
                     <h2><?php echo $data1["titre_site_1"]?></h2>
-                    <div class="mep">
                     <p>
                     <?php echo $data1["explication_site_1"]?>
-                   <a href=<?php echo $data1["lien_site_1"]?>> Click here to see the website</a>
-                  </div>
+                   <a class ="button" href=<?php echo $data1["lien_site_1"]?>> Click here to see the website</a>
                   </div>
 
                   <hr/>
 
                   <div class="Me">
                     <h2><?php echo $data1["titre_site_2"]?></h2>
-                    <div class="mep">
                     <p>
                     <?php echo $data1["explication_site_2"]?>
-                   <a href=<?php echo $data1["lien_site_2"]?>> Coming soon!</a>
-</div>
+                   <a class="button"> href=<?php echo $data1["lien_site_2"]?> Coming soon!</a>
 </div>   
 </div> 
 </div>
-  
+</div>
     <!-- Le super footer-->
     <footer>
       <div class="RS_liens">

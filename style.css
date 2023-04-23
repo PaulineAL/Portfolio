@@ -487,6 +487,11 @@ li {
 .perso {
   height: 65%;
 }
+
+.button {
+  background-color: #381b5c;
+  border-radius: 20%;
+}
 .carousel__slide:before {
   content: counter(item);
   position: absolute;
