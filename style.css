@@ -704,6 +704,12 @@ legend {
     flex-direction: column;
     align-items: center;
   }
+
+  .RS_liens {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .Me > img {
     width: 227px;
     height: 128px;
