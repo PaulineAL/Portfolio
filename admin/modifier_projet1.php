@@ -178,9 +178,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="card-body">
 <?php 
-foreach ($data1) {
-			
-			echo '<form method="POST" action="valider_modification_projet_1.php">';
+echo '<form method="POST" action="valider_modification_projet_1.php">';
 			echo 'Titre Projet : <input type=text" name="titre_projet" size="45" value="'.$data1['titre_projet'].'"maxlength="45" readonly><br/><br/>';
 			echo 'Description:<input type="text" name="description" size="100" autofocus="true" value="'.$data1['description'].'"maxlength="1000"><br/><br/>';
 			echo 'Explication:<input type="text" name="explication" size="100" autofocus="true" value="'.$data1['explication'].'"maxlength="1000"><br/><br/>';
@@ -190,7 +188,6 @@ foreach ($data1) {
             echo 'Quatrieme image:<input type="text" name="Img_projet_4" size="50" autofocus="true" value="'.$data1['Img_projet_4'].'"maxlength="255"><br/><br/>';
 			echo '<input type="submit" value="Modifier" name="modifier">';
 			echo '</form>';
-		}
 ?>
 </div>
 </div>
