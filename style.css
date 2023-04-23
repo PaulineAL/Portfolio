@@ -181,9 +181,9 @@ footer p {
   display: flex;
 }
 
-.bg.dev {
-  display: flex;
-  flex-direction: column;
+.bg1 {
+  background-color: rgba(81, 40, 133, .85);
+  height: 550px;
 }
 
 .onglet {
