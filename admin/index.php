@@ -240,16 +240,7 @@ echo "<script>window.location.href='login.php';</script>";
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<h2>CLIENTS</h2>
+          <h2>CLIENTS</h2>
 	<a href="visu_clients.php"> Visualiser tout les clients </a><br/>
 	<a href="ajout_client.php">Ajouter un client</a><br/>
 	<form method="POST" action="modifier_client.php">
@@ -269,6 +260,16 @@ echo "<script>window.location.href='login.php';</script>";
 		<input type="text" name="code_article" size="5" value="1" maxlength="10" >
 		<input type="submit" value="Ouvrir" name="ouvrir">
 	</form>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+
 <!-- ./wrapper -->
 
 <!-- jQuery -->
