@@ -45,17 +45,17 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
     <div class="centre w1">
       <!-- L'onglet au dessus-->
       <div class="onglet">
-        <p>Logo design</p>
+        <p><?php echo $data1["titre_projet"]?></p>
         <a class="X" href="page3_work.php"> X </a>
       </div>
 
       <div class="bg w1">
 
-        <section class="carousel" aria-label="Gallery">
+      <section class="carousel" aria-label="Gallery">
           <ol class="carousel__viewport">
             <li id="carousel__slide1" tabindex="0" class="carousel__slide">
               <div class="carousel__snapper">
-                <img class="Logo" src="Logo2.PNG" alt="First version of the logo" />
+                <img class="perso" src=<?php echo $data1["img_projet_1"]?> alt="The Man from Earth poster I made"/>
                 <a href="#carousel__slide4" class="carousel__prev"
                   >Go to last slide</a
                 >
@@ -65,14 +65,30 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
               </div>
             </li>
             <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <img class="Logo" src="Logo1.png" alt="Final version of logo"/>
-              </div>
+              <div class="carousel__snapper"> <img class="perso" src="<?php echo $data1["img_projet_2"]?>" alt="Fake perfume ad I made"/> </div>
               <a href="#carousel__slide1" class="carousel__prev"
                 >Go to previous slide</a
               >
               <a href="#carousel__slide3" class="carousel__next"
                 >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"><img class="perso" src=<?php echo $data1["img_projet_3"]?> alt="Logo for a traditional corsican carnaval I made"></div>
+              <a href="#carousel__slide2" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide4" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"> <img class="perso" src=<?php echo $data1["img_projet_4"]?> alt="Commercial for Cyber Monday I made."/></div>
+              <a href="#carousel__slide3" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide1" class="carousel__next"
+                >Go to first slide</a
               >
             </li>
           </ol>
@@ -87,38 +103,25 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
                 <a href="#carousel__slide2" class="carousel__navigation-button"
                   >Go to slide 2</a
                 >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
             </ol>
           </aside>
         </section>
 
         <div class="explication">
-          <h1>Logo for Brando</h1>
-          <h2>
-            This logo was created for a final project in my studies. I had to
-            create the visual identity of a traditional corsican carnaval, the
-            carnaval of Brando.
-          </h2>
-          <p>
-            For this project, I did some sketches on paper, but most of the work
-            was done on Adobe Illustrator.
-            <br />
-            <br />
-            I actually imagined two logos. The carnaval is known for its masks,
-            so it was obvious to me that needed to be in the logo. At the end of
-            the event, one of the characters is thrown in the fire, so I put it
-            in the first version. Eventually, I ended up realizing that my first
-            version was too complicated and detailled, and decided to imagine
-            another one.
-            <br />
-            <br />
-            I tried to think more about the symbolic. The mask was still a must,
-            but it also seemed important to me that there was an element to
-            represent Corsica. As such, I ended up drawing "la tête de maure",
-            the head represented on the corsican flag. I combined both, and it
-            gave the final version of the logo! As a little detail, I made it so
-            no elements has straight lines, except the mask, to empathize the
-            wooden effect.
-          </p>
+          <h1><?php echo $data1["titre_projet"]?></h1>
+          <h2><?php echo $data1["description"]?></h2>
+          <p><?php echo $data1["explication"]?></p>
         </div>
       </div>
     </div>
