@@ -24,4 +24,5 @@ $insertprojet ->execute ([
 	'Img_projet_3' => $Img_projet_3,
 	'Img_projet_4' => $Img_projet_4
 ]);
-	header ("Location:index.php");?>
+	echo "ca marche"
+	?>
