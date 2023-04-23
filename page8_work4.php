@@ -44,8 +44,8 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
     <div class="centre">
       <!-- L'onglet au dessus-->
       <div class="onglet w long">
-        <p>Creating original characters</p>
-        <a class="X" href="page3_work.html"> X </a>
+        <p><?php echo $data1["title_projet"]?></p>
+        <a class="X" href="page3_work.php"> X </a>
       </div>
 
       <div class="bg w1">
@@ -116,19 +116,9 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
           </aside>
         </section>
         <div class="explication">
-          <h1>Creating original characters</h1>
-          <h2>
-            i've always wanted to write my own story, comic, manga, or even
-            movie. Designing characters has always been something I loved, and
-            it's been massively present in my improvement in art.
-          </h2>
-          <p>
-            Here, you can see some of my original characters. <br/>
-            The ones on the first slide are called Tee (at the left) and Void (at the right). They're inspired from the cyberpunk universe. <br/>
-            On the second slides, you can see multiples sketches of ideas of orignal characters. A lot of them weren't kept as actual characters, but I still wanted to put them here. <br/>
-            On the third slide, it is a reference sheet for emotions, for my character Ronnie. She's a witch, studying magic. She isn't as developped as Tee and Void, who both have a very complete story, but I still like her nonetheless. <br/>
-            Finally, on the last slide, it's Aethalia, who's inspired by biblical accurate angels. She also has a developped backstory, she's the goddess of time and light, and has to wear a helmet to contain her power.
-          </p>
+          <h1><?php echo $data1["titre_projet"]?></h1>
+          <h2><?php echo $data1["description"]?></h2>
+          <p><?php echo $data1["explication"]?></p>
         </div>
       </div>
     </div>
