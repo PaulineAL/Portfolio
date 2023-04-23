@@ -9,7 +9,7 @@ $Img_projet_3=$_POST['Img_projet_3'];
 $Img_projet_4=$_POST['Img_projet_4'];
 
 //Ecriture de la requête 
-$sqlQuery = 'UPDATE projet_1 SET titre_projet=:titre_projet,explication=:explication,Img_projet_1=:Img_projet_1,Img_projet_2=:Img_projet_2,Img_projet_3=:Img_projet_3,Img_projet_4=:Img_projet_4;'
+$sqlQuery = 'UPDATE projet_1 SET titre_projet=titre_projet,description=description,explication=explication,Img_projet_1=Img_projet_1,Img_projet_2=Img_projet_2,Img_projet_3=Img_projet_3,Img_projet_4=Img_projet_4;'
 
 //Préparation 
 $insertprojet = $pdo->prepare($sqlQuery);
