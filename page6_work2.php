@@ -43,15 +43,17 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
     <div class="centre">
       <!-- L'onglet au dessus-->
       <div class="onglet w">
-        <p>Drawing perspective</p>
+        <p><?php echo $data1["titre_projet"]?></p>
         <a class="X" href="page3_work.php"> X </a>
       </div>
 
-      <div class="bg">
+      <div class="bg web">
+        <div class="explication top">
         <h1><?php echo $data1["titre_projet"]?></h1>
         <h2><?php echo $data1["description"]?></h2>
-        <p><?php echo $data1["explication"]?></p>
-      <div class="Me">
+        <p><?php echo $data1["explication"]?></p></div>
+      <div class="bg">
+         <div class="Me">
                     <h2><?php echo $data1["titre_site_1"]?></h2>
                     <div class="mep">
                     <p>
@@ -68,9 +70,9 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
                     <p>
                     <?php echo $data1["explication_site_2"]?>
                    <a href=<?php echo $data1["lien_site_2"]?>> Coming soon!</a>
-                  </div>
-                  </div>
-    </div>
+</div>
+</div>       
+  
     <!-- Le super footer-->
     <footer>
       <div class="RS_liens">

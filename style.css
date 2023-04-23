@@ -181,6 +181,11 @@ footer p {
   display: flex;
 }
 
+.bg.dev {
+  display: flex;
+  flex-direction: column;
+}
+
 .onglet {
   background-color: #381b5c;
   height: 6vh;
@@ -614,6 +619,11 @@ li {
   margin: 1vh;
   width: 50%;
 }
+
+.explication.top{
+  margin: 1vh;
+}
+
 .explication > h1 {
   font-family: "Oxanium";
   font-weight: 600;
