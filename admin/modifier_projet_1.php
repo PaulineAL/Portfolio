@@ -4,7 +4,7 @@ if (!isset($_SESSION['isUserLoggedIn'])){
 echo "<script>window.location.href='login.php';</script>";
 }
 
-$pdo = require 'model/connect.php';
+$pdo = require '../model/connect.php';
 $sql1 = 'SELECT * FROM projet_1';
 // fetch the data
 $data = $statement->fetch(PDO::FETCH_ASSOC);
