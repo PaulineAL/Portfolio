@@ -218,13 +218,6 @@ footer p {
 
 .X:hover {
   color: #39e4f7;
-  font-family: "Oxanium";
-  font-weight: medium;
-
-  max-width: 700px;
-  margin: 10px;
-
-  text-align: center;;
 }
 
 /* About */
@@ -522,7 +515,7 @@ li {
 }
 
 .button:hover {
-  color:#39e4f7
+  color:#39e4f7;
 }
 .carousel__slide:before {
   content: counter(item);
