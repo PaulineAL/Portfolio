@@ -4,8 +4,6 @@ if (!isset($_SESSION['isUserLoggedIn'])){
 echo "<script>window.location.href='login.php';</script>";
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +33,13 @@ echo "<script>window.location.href='login.php';</script>";
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
+<?php
+$pdo = require 'model/connect.php';
+$sql1 = 'SELECT * FROM projet_3';
+$statement = $pdo->query($sql1);
+// fetch the data
+$data1 = $statement->fetch(PDO::FETCH_ASSOC);
+?>
 <div class="wrapper">
 
   <!-- Preloader -->
