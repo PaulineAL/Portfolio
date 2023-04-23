@@ -1,7 +1,7 @@
 <?php 
 $pdo = require '../model/connect.php';
 //récupération des champs venant du formulaire
-$titre_projet=($_POST['titre_projet']);
+$titre_projet=$_POST['titre_projet'];
 $description=$_POST['description'];
 $explication=$_POST['explication'];
 $Img_projet_1=$_POST['Img_projet_1'];
