@@ -183,7 +183,11 @@ footer p {
 
 .colorfond {
   background-color: rgba(81, 40, 133, .85);
-  width: 100%;
+  font-family: "Oxanium";
+  font-weight: medium;
+  margin: 10px;
+
+  text-align: center;
 }
 
 .onglet {
@@ -248,7 +252,7 @@ hr {
   margin-bottom: 20px;
 }
 
-.mep,.colorfond,.me > p {
+.mep,.me > p {
   font-family: "Oxanium";
   font-weight: medium;
 
