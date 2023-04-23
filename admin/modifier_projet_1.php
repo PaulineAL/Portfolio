@@ -16,7 +16,7 @@ $data = $statement->fetch(PDO::FETCH_ASSOC);
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Backoffice | Dashboard</title>
+  <title>Backoffice | Projet 1</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -178,7 +178,7 @@ $data = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="card-body">
 <?php 
-foreach ($liste as $data) {
+foreach ($data) {
 			
 			echo '<form method="POST" action="valider_modification_projet_1.php">';
 			echo 'Titre Projet : <input type=text" name="titre_projet" size="45" value="'.$data['titre_projet'].'"maxlength="45" readonly><br/><br/>';
