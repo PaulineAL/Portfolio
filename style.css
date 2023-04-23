@@ -233,6 +233,11 @@ hr {
   font-weight:normal;
 }
 
+.Me.w > h1 {
+  font-family: "BN Elements";
+  font-weight:normal;
+}
+
 .Me {
   display: flex;
   flex-direction: column;
@@ -242,7 +247,7 @@ hr {
   margin-bottom: 20px;
 }
 
-.mep,.colorfond > p {
+.mep,.colorfond,.me > p {
   font-family: "Oxanium";
   font-weight: medium;
 
@@ -497,6 +502,9 @@ li {
 .button {
   background-color: #381b5c;
   border-radius: 20%;
+  font-family: "Oxanium";
+  font-weight: semibold;
+  padding: 1vh;
 }
 .carousel__slide:before {
   content: counter(item);
