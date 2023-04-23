@@ -5,13 +5,7 @@ echo "<script>window.location.href='login.php';</script>";
 }
 ?>
 
-<?php
-$pdo = require 'model/connect.php';
-$sql1 = 'SELECT * FROM projet_3';
-$statement = $pdo->query($sql1);
-// fetch the data
-$data1 = $statement->fetch(PDO::FETCH_ASSOC);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
