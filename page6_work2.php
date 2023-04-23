@@ -73,6 +73,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 </div>   
 </div> 
+</div>
   
     <!-- Le super footer-->
     <footer>
