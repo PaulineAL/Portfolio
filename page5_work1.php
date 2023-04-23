@@ -27,7 +27,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>Pauline AL - Graphism</title>
   </head>
   <body>
     <!-- Le header-->
@@ -46,7 +46,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       <!-- L'onglet au dessus-->
       <div class="onglet">
         <p>Logo design</p>
-        <a class="X" href="page3_work.html"> X </a>
+        <a class="X" href="page3_work.php"> X </a>
       </div>
 
       <div class="bg w1">

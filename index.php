@@ -29,7 +29,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       rel="stylesheet"
     />
 
-    <title>Portfolio</title>
+    <title>Pauline AL - Home</title>
   </head>
   <body>
     <!-- Le header-->

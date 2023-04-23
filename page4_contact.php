@@ -27,7 +27,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>Pauline AL - Contact</title>
   </head>
 
   <body>

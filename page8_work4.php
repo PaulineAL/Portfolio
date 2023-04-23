@@ -26,7 +26,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <title>Pauline AL - Drawing </title>
   </head>
   <body>
     <!-- Le header-->

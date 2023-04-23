@@ -26,7 +26,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>Pauline AL - Audiovisual</title>
   </head>
   <body>
     <!-- Le header-->
@@ -105,25 +105,12 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
         </section>
 
         <div class="explication">
-          <h1>Perfume poster</h1>
+          <h1><?php echo $data1["titre_projet"]?></h1>
           <h2>
-            This project was made for a homework. I had to imagine a perfume,
-            make a new bottle and imagine an ad poster for it.
+          <?php echo $data1["description"]?>
           </h2>
           <p>
-            I adore Greek mythology, and art, as you probably could tell, and I
-            thought right away of using the painting "The birth of Venus" by
-            Boticelli as an inspiration. Going from there, I decided to name my
-            perfume "Aphrodite", for the goddess of beauty. I then chose
-            pictures of two differents bottles of parfume, one with a curvy
-            body, to represent the curves of a woman, and for the lid, I chose
-            one with a miror effect, as Aphrodite is associated with mirors.
-            <br />
-            <br />
-            For the background, I obviously needed a beach, but I wanted one
-            with sea foam, since it's associated to Aphrodite as well. I added
-            more since there wasn't enough in my opinion. Then I added the
-            scallop shell, some shadows, and there it was!
+          <?php echo $data1["explication"]?>
           </p>
         </div>
       </div>
