@@ -220,6 +220,10 @@ footer p {
   color: #39e4f7;
 }
 
+.X:visited:hover {
+  color:#39e4f7;
+}
+
 /* About */
 hr {
   border: solid #381b5c;
@@ -515,6 +519,9 @@ li {
 }
 
 .button:hover {
+  color:#39e4f7;
+}
+.button:visited:hover {
   color:#39e4f7;
 }
 .carousel__slide:before {
