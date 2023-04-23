@@ -6,10 +6,11 @@ echo "<script>window.location.href='login.php';</script>";
 ?>
 
 <?php
-$pdo = require '../model/connect.php';
-$sqlQuery = 'SELECT * FROM projet_1';
-		$projet = $mysqlClient->prepare($sqlQuery);
-		$liste = $projet->fetchAll();
+$pdo = require 'model/connect.php';
+$sql1 = 'SELECT * FROM projet_3';
+$statement = $pdo->query($sql1);
+// fetch the data
+$data1 = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -177,21 +178,7 @@ $sqlQuery = 'SELECT * FROM projet_1';
 <h2>Visualier/ Modifier projets</h2>
 </div>
 <div class="card-body">
-<?php 
-foreach ($liste as $data) {
-			
-			echo '<form method="POST" action="valider_modification_projet_1.php">';
-			echo 'Titre Projet : <input type=text" name="titre_projet" size="45" value="'.$data['titre_projet'].'"maxlength="45" readonly><br/><br/>';
-			echo 'Description:<input type="text" name="description" size="100" autofocus="true" value="'.$data['description'].'"maxlength="1000"><br/><br/>';
-			echo 'Explication:<input type="text" name="explication" size="100" autofocus="true" value="'.$data['explication'].'"maxlength="1000"><br/><br/>';
-			echo 'Premiere image:<input type="text" name="Img_projet_1" size="50" autofocus="true" value="'.$data['Img_projet_1'].'"maxlength="255"><br/><br/>';
-            echo 'Deuxieme image:<input type="text" name="Img_projet_2" size="50" autofocus="true" value="'.$data['Img_projet_2'].'"maxlength="255"><br/><br/>';
-            echo 'Troisieme image:<input type="text" name="Img_projet_3" size="50" autofocus="true" value="'.$data['Img_projet_3'].'"maxlength="255"><br/><br/>';
-            echo 'Quatrieme image:<input type="text" name="Img_projet_4" size="50" autofocus="true" value="'.$data['Img_projet_4'].'"maxlength="255"><br/><br/>';
-			echo '<input type="submit" value="Modifier" name="modifier">';
-			echo '</form>';
-		}
-?>
+<?php echo $data1?>
 </div>
 </div>
 </div><!-- /.container-fluid -->
