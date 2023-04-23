@@ -47,7 +47,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
         <a class="X" href="page3_work.php"> X </a>
       </div>
 
-      <div class="bg1">
+      <div class="bg">
         <h1><?php echo $data1["titre_projet"]?></h1>
         <h2><?php echo $data1["description"]?></h2>
         <p><?php echo $data1["explication"]?></p>
