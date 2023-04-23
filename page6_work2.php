@@ -47,65 +47,29 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
         <a class="X" href="page3_work.php"> X </a>
       </div>
 
-      <div class="bg w1">
-        <section class="carousel" aria-label="Gallery">
-          <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <img class="perspec" src="Perspective1.png" alt="A drawing of perspective" />
-                <a href="#carousel__slide4" class="carousel__prev"
-                  >Go to last slide</a
-                >
-                <a href="#carousel__slide2" class="carousel__next"
-                  >Go to next slide</a
-                >
-              </div>
-            </li>
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"> <img class="perspec" src="Perspective2.PNG" alt="Two different drawings of perspective"/></div>
-              <a href="#carousel__slide1" class="carousel__prev"
-                >Go to previous slide</a
-              >
-              <a href="#carousel__slide3" class="carousel__next"
-                >Go to next slide</a
-              >
-            </li>
-          </ol>
-          <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide1" class="carousel__navigation-button"
-                  >Go to slide 1</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide2" class="carousel__navigation-button"
-                  >Go to slide 2</a
-                >
-              </li>
-            </ol>
-          </aside>
-        </section>
+      <div class="bg">
+        <h1><?php echo $data1["titre_projet"]?></h1>
+        <h2><?php echo $data1["description"]?></h2>
+        <p><?php echo $data1["explication"]?></p>
+      <div class="Me">
+                    <h2><?php echo $data1["titre_site_1"]?></h2>
+                    <div class="mep">
+                    <p>
+                    <?php echo $data1["explication_site_1"]?>
+                   <a href=<?php echo $data1["lien_site_1"]?>> Click here to see the website</a>
+                  </div>
+                  </div>
 
-        <div class="explication">
-          <h1>Drawing perspective</h1>
-          <h2>
-            This project is still on-going. My goal is to master perspective, as
-            I really enjoy drawing backgrounds.
-          </h2>
-          <p>
-            I learnt basic perspective in secondary school, and while I hated it
-            in the beginning, it grew on me. I started enjoying it, and
-            praticing more. I draw digitally and traditionally, but I do prefer
-            perspective on paper. I usually do the same thing, basic buildings,
-            but I'm slowly trying to try out more things. Drawing backgrounds in
-            my art is usually something I avoid, just like I used to avoid to
-            draw hands, but it brings so much depth in a piece that it's
-            essential. And I love creating an ambiance in my drawings, so that
-            the spectator feels something.
-          </p>
-        </div>
-      </div>
+                  <hr/>
+
+                  <div class="Me">
+                    <h2><?php echo $data1["titre_site_2"]?></h2>
+                    <div class="mep">
+                    <p>
+                    <?php echo $data1["explication_site_2"]?>
+                   <a href=<?php echo $data1["lien_site_2"]?>> Coming soon!</a>
+                  </div>
+                  </div>
     </div>
     <!-- Le super footer-->
     <footer>
