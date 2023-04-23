@@ -247,7 +247,7 @@ echo "<script>window.location.href='login.php';</script>";
 <section class="content">
 <div class="container-fluid">
 <!-- Small boxes (Stat box) -->
-<div class="row">
+<div class="card">
 <h2>CLIENTS</h2>
 	<a href="visu_clients.php"> Visualiser tout les clients </a><br/>
 	<a href="ajout_client.php">Ajouter un client</a><br/>
@@ -258,8 +258,8 @@ echo "<script>window.location.href='login.php';</script>";
 	</form>
 	<br/>
 	
-<hr>
-
+</div>
+<div class="card">
 <h2> ARTICLES </h2>
 	<a href="visu_articles.php">Visualiser tous les articles</a><br/> <br/>
 	<a href="ajout_article.php">Ajouter un article</a> <br/> <br/>
