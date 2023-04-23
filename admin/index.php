@@ -249,6 +249,26 @@ echo "<script>window.location.href='login.php';</script>";
   </aside>
   <!-- /.control-sidebar -->
 </div>
+<h2>CLIENTS</h2>
+	<a href="visu_clients.php"> Visualiser tout les clients </a><br/>
+	<a href="ajout_client.php">Ajouter un client</a><br/>
+	<form method="POST" action="modifier_client.php">
+		Visualiser/Modifier le cient n°
+		<input type="text" name="code_client" size="5" value="1" maxlength="10" >
+		<input type="submit" value="Ouvrir" name="ouvrir">
+	</form>
+	<br/>
+	
+<hr>
+
+<h2> ARTICLES </h2>
+	<a href="visu_articles.php">Visualiser tous les articles</a><br/>
+	<a href="ajout_article.php">Ajouter un article</a> <br/>
+	<form method="POST" action="modifier_article.php">
+		Visualiser/Modifier l article n°
+		<input type="text" name="code_article" size="5" value="1" maxlength="10" >
+		<input type="submit" value="Ouvrir" name="ouvrir">
+	</form>
 <!-- ./wrapper -->
 
 <!-- jQuery -->
