@@ -186,7 +186,7 @@ echo '<form method="POST" action="valider_modification_projet1.php">';
             echo 'Deuxieme image:<input type="text" name="Img_projet_2" size="50" autofocus="true" value="'.$data1['Img_projet_2'].'"maxlength="255"><br/><br/>';
             echo 'Troisieme image:<input type="text" name="Img_projet_3" size="50" autofocus="true" value="'.$data1['Img_projet_3'].'"maxlength="255"><br/><br/>';
             echo 'Quatrieme image:<input type="text" name="Img_projet_4" size="50" autofocus="true" value="'.$data1['Img_projet_4'].'"maxlength="255"><br/><br/>';
-			echo '<input type="submit" value="Modifier" name="modifier">';
+			echo '<input type="submit" value="modifier" name="modifier">';
 			echo '</form>';
 ?>
 </div>
