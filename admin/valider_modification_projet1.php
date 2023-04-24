@@ -24,8 +24,14 @@ $sql .= "WHERE id_projet = 1";
 
 $statement = $pdo->query($sql);
 
-if($statement) {
-echo "<script>
-window.location.href='../admin/index.php?homesetting=true'; </script>";
+if ($pdo->query($sql) === TRUE) {
+    echo "Records updated: ".$titre_projet."-".$description."-".$explication."-".$img_projet_1."-".$img_projet_2."-".$img_projet_3."-".$img_projet_4."-";
+} else {
+    echo "Error: ".$sql."<br>".$pdo->error;
 }
+//if($statement) {
+//echo "<script>
+//window.location.href='../admin/index.php?homesetting=true'; </script>";
+//}
+
 ?>
