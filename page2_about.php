@@ -110,9 +110,9 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
     <!-- Le super footer-->
     <footer>
       <div class="RS_liens">
-      <h4><img class="rs" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="logo instagram"> <?php echo $data3["instagram"]?></h4>
-      <h4><img class="rs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" alt="logo linkedin"><?php echo $data3["linkedin"]?></h4>
-      <h4><img class="rs" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="logo twitter"><?php echo $data3["twitter"]?></h4>
+      <h4><a href=<?php echo $data3['lien_insta']?>><img class="rs" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="logo instagram"> <?php echo $data3["instagram"]?></a></h4>
+      <h4><a href=<?php echo $data3['lien_linkedin']?>><img class="rs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" alt="logo linkedin"><?php echo $data3["linkedin"]?></a></h4>
+      <h4><a href=<?php echo $data3['lien_twt']?>><img class="rs" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="logo twitter"><?php echo $data3["twitter"]?></a></h4>
 </div>
 <hr class="footer_separator">
       <p><?php echo $data3["txt_footer"]?></h4>
