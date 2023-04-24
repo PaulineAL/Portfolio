@@ -181,31 +181,31 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <div class="card-body">
 <div class="form-group">
 <label for="titre_projet">Titre du projet</label>
-<input type="text" value ="<?=$data1['titre_projet'] ?>" class="form-control" id="titre_projet">
+<input type="text" value ="<?=$data1['titre_projet']?>" class="form-control" id="titre_projet">
 </div>
 <div class="form-group">
 <label for="description">Description du projet</label>
-<input type="text" value ="<?=$data1['description'] ?>" class="form-control" id="description">
+<input type="text" value ="<?=$data1['description']?>" class="form-control" id="description">
 </div>
 <div class="form-group">
 <label for="explication">Explications du projet</label>
-<input type="text" value ="<?=$data1['explication'] ?>" class="form-control" id="explication">
+<input type="text" value ="<?=$data1['explication']?>" class="form-control" id="explication">
 </div>
 <div class="form-group">
 <label for="img_projet_1">Image 1</label>
-<input type="text" value ="<?=$data1['img_projet_1'] ?>" class="form-control" id="img_projet_1">
+<input type="text" value ="<?=$data1['img_projet_1']?>" class="form-control" id="img_projet_1">
 </div>
 <div class="form-group">
 <label for="img_projet_2">Image 2</label>
-<input type="text" value ="<?=$data1['img_projet_2'] ?>" class="form-control" id="img_projet_2">
+<input type="text" value ="<?=$data1['img_projet_2']?>" class="form-control" id="img_projet_2">
 </div>
 <div class="form-group">
 <label for="img_projet_3">Image 3</label>
-<input type="text" value ="<?=$data1['img_projet_3'] ?>" class="form-control" id="img_projet_3">
+<input type="text" value ="<?=$data1['img_projet_3']?>" class="form-control" id="img_projet_3">
 </div>
 <div class="form-group">
 <label for="img_projet_4">Image 4</label>
-<input type="text" value ="<?=$data1['img_projet_4'] ?>" class="form-control" id="img_projet_4">
+<input type="text" value ="<?=$data1['img_projet_4']?>" class="form-control" id="img_projet_4">
 </div>
 </div>
 <!-- /.card-body -->
