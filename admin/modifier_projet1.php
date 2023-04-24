@@ -185,11 +185,11 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="form-group">
 <label for="description">Description du projet</label>
-<input type="text" class="form-control" id="description" name="description" value =<?=$data1['description']?> >
+<input type="text" class="form-control" id="description" name="description" maxlength="1000" value =<?=$data1['description']?> >
 </div>
 <div class="form-group">
 <label for="explication">Explications du projet</label>
-<input type="text" class="form-control" id="explication" name="explication" value =<?=$data1['explication']?> >
+<input type="text" class="form-control" id="explication" name="explication" maxlength="1000" value =<?=$data1['explication']?> >
 </div>
 <div class="form-group">
 <label for="img_projet_1">Image 1</label>
