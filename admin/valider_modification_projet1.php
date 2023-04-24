@@ -4,6 +4,7 @@ if (!isset($_SESSION['isUserLoggedIn'])){
 echo "<script>window.location.href='login.php';</script>";
 }
 
+if(isset($_POST['modifier'])){
 $titre_projet=$_POST['titre_projet'];
 $description=$_POST['description'];
 $explication=$_POST['explication'];
@@ -20,7 +21,6 @@ $sql .= "img_projet_1='"'men'"', ";
 $sql .= "img_projet_2='"'men'"', ";
 $sql .= "img_projet_3='"'men'"', ";
 $sql .= "img_projet_4='"'men'"', ";
-$sql .= "WHERE id_projet = 1";
 
 $statement = $pdo->query($sql);
 
@@ -30,4 +30,5 @@ $statement = $pdo->query($sql);
 //}
 
 echo $titre_projet;
+}
 ?>
