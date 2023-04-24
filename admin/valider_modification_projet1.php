@@ -1,5 +1,8 @@
 <?php
-$pdo = require('../model/connect.php');
+require('../model/connect.php');
+if (!isset($_SESSION['isUserLoggedIn'])){
+echo "<script>window.location.href='login.php';</script>";
+}
 
 if(isset($_POST['modifier'])){
 $titre_projet=$_POST['titre_projet'];
@@ -21,9 +24,9 @@ $sql .= "img_projet_4='".$img_projet_4."' ";
 
 $statement = $pdo->query($sql);
 
-//if($statement) {
-//echo "<script>
-//window.location.href='../admin/index.php?homesetting=true'; </script>";
-//}
+if($statement) {
+echo "<script>
+window.location.href='../admin/index.php?homesetting=true'; </script>";
+}
 }
 ?>
