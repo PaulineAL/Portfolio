@@ -4,7 +4,6 @@ if (!isset($_SESSION['isUserLoggedIn'])){
 echo "<script>window.location.href='login.php';</script>";
 }
 
-if(isset($_POST['modifier'])){
 $titre_projet=$_POST['titre_projet'];
 $description=$_POST['description'];
 $explication=$_POST['explication'];
@@ -15,15 +14,15 @@ $img_projet_4=$_POST['img_projet_4'];
 
 echo var_dump($_POST);
 
-$sql = "UPDATE `projet_1` SET ";
-$sql .= "`titre_projet`='".$titre_projet."', ";
-$sql .= "`description`='".$description."', ";
-$sql .= "`explication`='".$explication."', ";
-$sql .= "`img_projet_1`='".$img_projet_1."', ";
-$sql .= "`img_projet_2`='".$img_projet_2."', ";
-$sql .= "`img_projet_3`='".$img_projet_3."', ";
-$sql .= "`img_projet_4`='".$img_projet_4."' ";
-$sql .= "WHERE `id_projet` = 1";
+$sql = "UPDATE projet_1 SET ";
+$sql .= "titre_projet='".$titre_projet."', ";
+$sql .= "description='".$description."', ";
+$sql .= "explication='".$explication."', ";
+$sql .= "img_projet_1='".$img_projet_1."', ";
+$sql .= "img_projet_2='".$img_projet_2."', ";
+$sql .= "img_projet_3='".$img_projet_3."', ";
+$sql .= "img_projet_4='".$img_projet_4."' ";
+$sql .= "WHERE id_projet = 1";
 
 $statement = $pdo->query($sql);
 
@@ -35,6 +34,5 @@ if ($pdo->query($sql) === TRUE) {
     echo "Records updated: ".$titre_projet."-".$description."-".$explication."-".$img_projet_1."-".$img_projet_2."-".$img_projet_3."-".$img_projet_4."-";
 } else {
     echo "Error: ".$sql."<br>".$pdo->error;
-}
 }
 ?>

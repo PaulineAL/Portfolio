@@ -210,7 +210,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <!-- /.card-body -->
 <div class="card-footer">
-<button type="submit" name="modifier" class="btn btn-primary">Sauvegarder</button>
+<button type="submit" class="btn btn-primary">Sauvegarder</button>
 </div>
 </form>
 </div>
