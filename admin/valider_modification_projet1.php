@@ -23,11 +23,12 @@ $sql .= "img_projet_3=\"".$img_projet_3."\", ";
 $sql .= "img_projet_4=\"".$img_projet_4."\" ";
 $sql .= "WHERE id_projet = 1";
 
+$statement = $pdo->query($sql);
+
 $sql2 = "UPDATE projet_1 SET ";
 $sql2 .= "explication=\"".$explication."\", ";
 $sql2 .= "WHERE id_projet = 1";
 
-$statement = $pdo->query($sql);
 $statement2 = $pdo->query($sql2);
 
 //if($statement) {
