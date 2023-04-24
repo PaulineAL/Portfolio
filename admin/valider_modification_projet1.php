@@ -24,9 +24,11 @@ $sql .= "img_projet_4='".$img_projet_4."' ";
 
 $statement = $pdo->query($sql);
 
-if($statement) {
-echo "<script>
-window.location.href='../admin/index.php?homesetting=true'; </script>";
-}
+//if($statement) {
+//echo "<script>
+//window.location.href='../admin/index.php?homesetting=true'; </script>";
+//}
+
+echo $titre_projet;
 }
 ?>
