@@ -4,7 +4,6 @@ if (!isset($_SESSION['isUserLoggedIn'])){
 echo "<script>window.location.href='login.php';</script>";
 }
 
-if(isset($_POST['modifier'])){
 $titre_projet=$_POST['titre_projet'];
 $description=$_POST['description'];
 $explication=$_POST['explication'];
@@ -31,5 +30,4 @@ $statement = $pdo->query($sql);
 //}
 
 echo $titre_projet;
-}
 ?>
