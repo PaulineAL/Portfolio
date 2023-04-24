@@ -49,7 +49,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       </div>
 
       <div class="bg w1">
-        <section class="comingsoon" >
+        <section class="comingsoon">
           Not published on youtube yet - Coming soon !
         </section>
 
