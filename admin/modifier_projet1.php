@@ -181,7 +181,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <div class="card-body">
 <div class="form-group">
 <label for="titre_projet">Titre du projet</label>
-<input type="text" value =<?=$data1['titre_projet']?> class="form-control" id="titre_projet" name="titre_projet">
+<input type="text" value ="<?=$data1['titre_projet']?>" class="form-control" id="titre_projet" name="titre_projet">
 </div>
 <div class="form-group">
 <label for="description">Description du projet</label>
