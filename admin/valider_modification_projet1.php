@@ -13,6 +13,8 @@ $img_projet_2=$_POST['img_projet_2'];
 $img_projet_3=$_POST['img_projet_3'];
 $img_projet_4=$_POST['img_projet_4'];
 
+echo var_dump($_POST);
+
 $sql = "UPDATE `projet_1` SET ";
 $sql .= "`titre_projet`='".$titre_projet."', ";
 $sql .= "`description`='".$description."', ";
