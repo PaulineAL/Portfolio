@@ -25,7 +25,7 @@ $sql .= "WHERE id_projet = 1";
 
 $sql2 = "UPDATE projet_1 SET ";
 $sql2 .= "explication=\"".$explication."\", ";
-$sql2 .= "WHERE id_project = 1";
+$sql2 .= "WHERE id_projet = 1";
 
 $statement = $pdo->query($sql);
 $statement2 = $pdo->query($sql2);
