@@ -29,6 +29,7 @@ if ($pdo->query($sql) === TRUE) {
 } else {
     echo "Error: ".$sql."<br>".$pdo->error;
 }
+
 //if($statement) {
 //echo "<script>
 //window.location.href='../admin/index.php?homesetting=true'; </script>";
