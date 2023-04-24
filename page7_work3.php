@@ -49,7 +49,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
       </div>
 
       <div class="bg w1">
-        <section class="carousel" aria-label="Gallery">
+        <section>
           Not published on youtube yet - Coming soon !
         </section>
 
