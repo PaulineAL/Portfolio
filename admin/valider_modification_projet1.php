@@ -13,14 +13,7 @@ $img_projet_2=$_POST['img_projet_2'];
 $img_projet_3=$_POST['img_projet_3'];
 $img_projet_4=$_POST['img_projet_4'];
 
-$sql = "UPDATE projet_1 SET ";
-$sql .= "titre_projet='"'men'"', ";
-$sql .= "description='"'men'"', ";
-$sql .= "explication='"'men'"', ";
-$sql .= "img_projet_1='"'men'"', ";
-$sql .= "img_projet_2='"'men'"', ";
-$sql .= "img_projet_3='"'men'"', ";
-$sql .= "img_projet_4='"'men'"', ";
+$sql="UPDATE projet_1 SET titre_projet='$titre_projet',description='$description',explication='$explication',img_projet_1='$img_projet_1',img_projet_2='$img_projet_2',img_projet_3='$img_projet_3',img_projet_4='$img_projet_4'";
 
 $statement = $pdo->query($sql);
 
@@ -28,7 +21,10 @@ $statement = $pdo->query($sql);
 //echo "<script>
 //window.location.href='../admin/index.php?homesetting=true'; </script>";
 //}
-
-echo $titre_projet;
+if ($pdo->query($sql) === TRUE) {
+    echo "Records updated: ".$titre_projet."-".$description."-".$explication."-".$img_projet_1."-".$img_projet_2."-".$img_projet_3."-".$img_projet_4."-";
+} else {
+    echo "Error: ".$sql."<br>".$pdo->error;
+}
 }
 ?>
