@@ -6,7 +6,7 @@ echo "<script>window.location.href='login.php';</script>";
 
 $titre_projet=$_POST['titre_projet'];
 $description=$_POST['description'];
-// $explication=$_POST['explication'];
+$explication=$_POST['explication'];
 $img_projet_1=$_POST['img_projet_1'];
 $img_projet_2=$_POST['img_projet_2'];
 $img_projet_3=$_POST['img_projet_3'];
