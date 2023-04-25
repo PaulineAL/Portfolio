@@ -219,7 +219,6 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <input type="text" class="form-control" id="lien_site_2" name="lien_site_2" value =<?=$data1['lien_site_2']?> >
 </div>
 </div>
-</div>
 <!-- /.card-body -->
 <div class="card-footer">
 <button type="submit" class="btn btn-primary">Sauvegarder</button>
