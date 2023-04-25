@@ -297,8 +297,8 @@ hr {
   justify-content: space-around;
 
   margin-bottom: 100px;
-  padding-left: 10vh;
-  padding-right: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
 .flower,
