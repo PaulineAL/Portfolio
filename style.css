@@ -301,7 +301,7 @@ hr {
   margin-right: 10vh;
 }
 
-.cvdl.colorfond > h2 {
+.cvdl,.colorfond > h2 {
   font-family: "Oxanium";
   font-weight: semibold;
 }
@@ -312,7 +312,7 @@ hr {
 }
 
 .cvdl {
- margin: 5vh;;
+ padding: 5vh;;
 }
 /* Skills */
 
