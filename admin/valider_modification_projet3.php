@@ -13,7 +13,7 @@ $sql = "UPDATE projet_3 SET ";
 $sql .= "titre_projet=\"".$titre_projet."\", ";
 //$sql .= "description=\"".$description."\", ";
 //$sql .= "explication=\"".$explication."\", ";
-$sql .= "WHERE id_projet = 41";
+//$sql .= "WHERE id_projet = 41";
 
 $statement = $pdo->query($sql);
 

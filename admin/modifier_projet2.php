@@ -215,7 +215,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <?php echo $data1['explication_site_2']?>
 </div>
 <div class="form-group">
-<label for="lien_site_2">Lien site 1</label>
+<label for="lien_site_2">Lien site 2</label>
 <input type="text" class="form-control" id="lien_site_2" name="lien_site_2" value =<?=$data1['lien_site_2']?> >
 </div>
 </div>
