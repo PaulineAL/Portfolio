@@ -185,7 +185,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="form-group">
 <h3>Description du projet</h3>
-  <div class="info-box">
+  <div class="info-box bg-info">
     Due à la configuration du serveur, il est impossible de stocker un grand nombre de caractères dans une variable post, rendant impossible le changement de la description et de l'explication via le Backoffice.
   </div>
   <?php echo $data1['description']?>
