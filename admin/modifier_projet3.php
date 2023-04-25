@@ -9,7 +9,7 @@ echo "<script>window.location.href='login.php';</script>";
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Backoffice | Dashboard</title>
+  <title>Backoffice | Projet 3</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,6 +33,13 @@ echo "<script>window.location.href='login.php';</script>";
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
+<?php
+$pdo = require '../model/connect.php';
+$sql1 = 'SELECT * FROM projet_3';
+$statement = $pdo->query($sql1);
+// fetch the data
+$data1 = $statement->fetch(PDO::FETCH_ASSOC);
+?>
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -170,12 +177,29 @@ echo "<script>window.location.href='login.php';</script>";
 <h2>Visualier/ Modifier projets</h2>
 </div>
 <div class="card-body">
-	<li>
-    <ul> <a href="modifier_projet1.php"> Projet 1 </a> </ul>
-    <ul> <a href="modifier_projet2.php"> Projet 2 </a> </ul>
-    <ul> <a href="modifier_projet3.php"> Projet 3 </a> </ul>
-    <ul> <a href="modifier_projet4.php"> Projet 4 </a> </ul>
-</li>
+<form action="valider_modification_projet3.php" method="post">
+<div class="card-body">
+<div class="form-group">
+<label for="titre_projet">Titre du projet</label>
+<input type="text" value =<?=$data1['titre_projet']?> class="form-control" id="titre_projet" name="titre_projet">
+</div>
+<div class="form-group">
+<h3>Description du projet</h3>
+  <div class="info-box bg-info">
+    Due à la configuration du serveur, il est impossible de stocker un grand nombre de caractères dans une variable post, rendant impossible le changement de la description et de l'explication via le Backoffice.
+  </div>
+  <?php echo $data1['description']?>
+</div>
+<div class="form-group">
+<h3>Explications du projet</h3>
+<?php echo $data1['explication']; ?>
+</div>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+<button type="submit" class="btn btn-primary">Sauvegarder</button>
+</div>
+</form>
 </div>
 </div>
 </div><!-- /.container-fluid -->
