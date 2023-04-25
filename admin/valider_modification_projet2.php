@@ -1,8 +1,5 @@
 <?php
 require('../model/connect.php');
-if (!isset($_SESSION['isUserLoggedIn'])){
-echo "<script>window.location.href='login.php';</script>";
-}
 
 
 $titre_projet=$_POST['titre_projet'];
