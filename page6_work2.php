@@ -65,7 +65,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
 
                   <hr/>
 
-                  <div class="Projet">
+                  <div class="Projet full">
                     <h1><?php echo $data1["titre_site_2"]?></h1>
                     <p>
                     <?php echo $data1["explication_site_2"]?>
