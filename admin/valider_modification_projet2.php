@@ -10,8 +10,6 @@ $lien_site_1=$_POST['lien_site_1'];
 $titre_site_2=$_POST['titre_site_2'];
 $lien_site_2=$_POST['lien_site_2'];
 
-echo var_dump($_POST);
-
 $sql = "UPDATE projet_2 SET ";
 $sql .= "titre_projet=\"".$titre_projet."\", ";
 //$sql .= "description=\"".$description."\", ";
