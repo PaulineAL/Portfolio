@@ -184,14 +184,17 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <input type="text" value =<?=$data1['titre_projet']?> class="form-control" id="titre_projet" name="titre_projet">
 </div>
 <div class="form-group">
-<label for="description">Description du projet</label>
-<input type="text" class="form-control" id="description" name="description" value =<?=$data1['description']?> >
+<h3>Description du projet</h3>
+<div class="ribbon-wrapper">
+  <div class="ribbon bg-primary">
+    Due à la configuration du serveur, il est impossible de stocker un grand nombre de caractères dans une variable post, rendant impossible le changement de la description et de l'explication via le Backoffice.
+  </div>
+  <?php echo $data1['description']?>
+</div>
 </div>
 <div class="form-group">
-<label for="explication" >Explication:</label><br>
-<textarea cols="50" rows="20" name="explication" id="explication">
+<h3>Explications du projet</h3>
 <?php echo $data1['explication']; ?>
-</textarea><br>
 </div>
 <div class="form-group">
 <label for="img_projet_1">Image 1</label>
