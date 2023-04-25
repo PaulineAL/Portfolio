@@ -189,7 +189,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="form-group">
 <label for="explication" >Explication:</label>
-<textarea cols="35" rows="12" name="explication" id="explication">
+<textarea cols="100" rows="100" name="explication" id="explication">
 <?php echo $data1['explication']; ?>
 </textarea><br>
 </div>
