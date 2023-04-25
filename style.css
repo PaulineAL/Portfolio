@@ -294,7 +294,7 @@ hr {
 .Cv {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   margin-bottom: 100px;
   margin-left: 10vh;
@@ -313,7 +313,10 @@ hr {
 
 .cvdl {
  padding: 5vh;
- width: 100vh;
+ width: 50vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 /* Skills */
 
