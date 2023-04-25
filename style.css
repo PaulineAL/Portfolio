@@ -301,20 +301,19 @@ hr {
   margin-right: 10vh;
 }
 
-.flower,
-.bac,
-.mmi,.colorfond > h2 {
+.cvdl.colorfond > h2 {
   font-family: "Oxanium";
   font-weight: semibold;
 }
 
-.bac,
-.flower,
-.mmi > h3 {
+.cvdl > h3 {
   font-family: "Oxanium";
   font-weight: regular;
 }
 
+.cvdl {
+ margin: 5vh;;
+}
 /* Skills */
 
 .skills > h1 {

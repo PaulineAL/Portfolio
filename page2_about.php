@@ -71,7 +71,7 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
                   <div class="Cv">
                       <h1>CV</h1>
                       
-                      <div class="mmi">
+                      <div class="cvdl">
                       <h2> Download my CV here </h2>
                       <a class ="button" href="CV_Pauline_AguiarLalanne.pdf" download> Click here to download </a>
                       </div>
