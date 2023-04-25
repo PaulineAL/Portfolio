@@ -192,7 +192,7 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="form-group">
 <h3>Explications du projet</h3>
-<?php echo $data1['explication']; ?>
+<?php echo $data1['explication']?>
 </div>
 <div class="form-group">
 <label for="titre_site_1">Titre site 1</label>
