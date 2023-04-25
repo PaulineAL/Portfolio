@@ -55,12 +55,12 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
         <p><?php echo $data1["explication"]?></p>
 </div>
       <div class="bg work">
-         <div class="Projet">
+         <div class="Projet full">
                     <h1><?php echo $data1["titre_site_1"]?></h1>
                     <p>
                     <?php echo $data1["explication_site_1"]?>
 </p>
-                   <a class ="button" href=<?php echo $data1["lien_site_1"]?>> Click here to see the website</a>
+                   <p><a class ="button" href=<?php echo $data1["lien_site_1"]?>> Click here to see the website</a></p>
                   </div>
 
                   <hr/>

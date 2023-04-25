@@ -309,6 +309,12 @@ hr {
   font-weight: regular;
 }
 
+.full {
+width: 100%;
+height: 100%;
+padding: 5vh;
+margin: 5vh;
+}
 .cvdl {
  padding: 5vh;
  width: 50vh;
