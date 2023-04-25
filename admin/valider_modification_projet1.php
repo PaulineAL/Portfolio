@@ -4,9 +4,16 @@ if (!isset($_SESSION['isUserLoggedIn'])){
 echo "<script>window.location.href='login.php';</script>";
 }
 
+function clean($str)
+{
+$str = @trim($str);
+if(get_magic_quotes_gpc()) {$str = stripslashes($str);  }
+return mysql_real_escape_string($str);
+}
+
 $titre_projet=$_POST['titre_projet'];
 $description=$_POST['description'];
-$explication=$_POST['explication'];
+$explication=clean($_POST['explication']);
 $img_projet_1=$_POST['img_projet_1'];
 $img_projet_2=$_POST['img_projet_2'];
 $img_projet_3=$_POST['img_projet_3'];

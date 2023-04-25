@@ -187,7 +187,6 @@ $data1 = $statement->fetch(PDO::FETCH_ASSOC);
 <label for="description">Description du projet</label>
 <input type="text" class="form-control" id="description" name="description" value =<?=$data1['description']?> >
 </div>
-<?php $explication= $_POST['explication'];?>
 <div class="form-group">
 <label for="explication" >Explication:</label>
 <textarea cols="35" rows="12" name="explication" id="explication">
