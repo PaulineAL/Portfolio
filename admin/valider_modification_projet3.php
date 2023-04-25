@@ -12,7 +12,7 @@ $titre_projet=$_POST['titre_projet'];
 echo var_dump($_POST);
 
 $sql = "UPDATE projet_3 SET ";
-$sql .= "titre_projet=\"".$titre_projet."\", ";
+$sql .= "titre_projet=\"".$titre_projet."\" ";
 //$sql .= "description=\"".$description."\", ";
 //$sql .= "explication=\"".$explication."\", ";
 $sql .= "WHERE id_projet = 41";
