@@ -9,8 +9,6 @@ $titre_projet=$_POST['titre_projet'];
 //$description=$_POST['description'];
 //$explication=($_POST['explication']);
 
-echo var_dump($_POST);
-
 $sql = "UPDATE projet_3 SET ";
 $sql .= "titre_projet=\"".$titre_projet."\" ";
 //$sql .= "description=\"".$description."\", ";
