@@ -72,18 +72,8 @@ $data3 = $statement->fetch(PDO::FETCH_ASSOC);
                       <h1>CV</h1>
                       
                       <div class="mmi">
-                      <h2> 2022 - 2023 </h2>
-                      <h3> First year of MMI </h3>
-                      </div>
-
-                      <div class="flower">
-                      <h2> May 2022 </h2>
-                      <h3> Selling flowers on markets </h3>
-                      </div>
-
-                      <div class="bac">
-                      <h2> 2021 </h2>
-                      <h3> Obtained the baccalaureate specializing in Arts, philosophy and English with honours </h3>
+                      <h2> Download my CV here </h2>
+                      <a class ="button" href="CV_Pauline_AguiarLalanne.pdf" download> Click here to download </a>
                       </div>
                   </div>
 
