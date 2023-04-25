@@ -19,7 +19,7 @@ $sql .= "titre_projet=\"".$titre_projet."\", ";
 $sql .= "titre_site_1=\"".$titre_site_1."\", ";
 $sql .= "lien_site_1=\"".$lien_site_1."\", ";
 $sql .= "titre_site_2=\"".$titre_site_2."\", ";
-$sql .= "lien_site_2=\"".$lien_site_2"\" ";
+$sql .= "lien_site_2=\"".$lien_site_2."\" ";
 $sql .= "WHERE id_projet = 1";
 
 $statement = $pdo->query($sql);
