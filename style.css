@@ -43,11 +43,8 @@ h4 {
 }
 
 .comingsoon {
-  margin-left: 2vh;
-  margin-top: 2vh;
-
-  font-size: 15px;
-  font-family: "Bn Elements";
+align-self:center;
+margin-left: 6vh;
 }
 
 .centre {
